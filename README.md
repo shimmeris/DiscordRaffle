@@ -9,7 +9,7 @@
 ## 安装
 项目借助了 discord.py 库，但因其做了限制，只适用于 bot 账户，因此对其源码进行了些许更改，需通过源码进行安装
 ```shell
-pip3 install rich
+python3 -m pip install rich
 cd discord.py && python3 setup.py install
 ```
 
