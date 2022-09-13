@@ -243,9 +243,7 @@ async def main(args):
         for token in f:
             intents = discord.Intents.default()
             intents.message_content = True
-            client = discord.Client(
-                max_messages=None, intents=intents, proxy="socks5://127.0.0.1:7890"
-            )
+            client = discord.Client(max_messages=None, intents=intents)
             client.user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
             await client.login(token.strip())
             print_time(f"获取到用户: [light_pink1]{client.user.name}[/light_pink1]")
